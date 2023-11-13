@@ -43,7 +43,7 @@ body {
 .left-item:first-child {
     margin: 5px 0 5px 11px;
     padding: 4px 0 0;
-    background-image: url('Amazonlogo.png');
+    background-image: url('images/Amazonlogo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,7 +187,7 @@ body {
 
 .main {
     box-sizing: border-box;
-    background-image: url('61mH2dDm5kL._SX3000_.jpg');
+    background-image: url('images/61mH2dDm5kL._SX3000_.jpg');
     background-position: top;
     background-size: cover;
     height: 100vh;
