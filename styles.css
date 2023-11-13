@@ -219,7 +219,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-/*    quero que tenha um espaço obrigatório entre cada rectangle*/
+    /*    quero que tenha um espaço obrigatório entre cada rectangle*/
     margin: 0 10px 0 0;
     border: 1px solid rgb(230, 230, 230);
 }
@@ -244,15 +244,13 @@ body {
     margin-top: 20px;
 }
 
-.rectangle:last-child  {
+.rectangle:last-child {
     height: 100px;
     margin: 0 0 0 0;
 }
 
 .product-images {
     display: grid;
-    -webkit-box-flex: 1;
-    grid-gap: 2px 6px;
     flex: 1;
     gap: 2px 6px;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
@@ -260,7 +258,7 @@ body {
 }
 
 .img-container {
-    width:130px;
+    width: 130px;
     height: 168px;
     display: flex;
     flex-direction: column;
@@ -271,6 +269,7 @@ body {
     width: 111px;
     height: 111px;
 }
+
 .footer {
     box-sizing: border-box;
     background-color: #232f3e;
