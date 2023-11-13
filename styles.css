@@ -203,6 +203,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .rectangle-container:first-child {
@@ -255,6 +257,7 @@ body {
     gap: 2px 6px;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     margin-bottom: 1px;
+    margin-left: 20px;
 }
 
 .img-container {
