@@ -187,13 +187,49 @@ body {
 
 .main {
     box-sizing: border-box;
-    background-image: url('images/61mH2dDm5kL._SX3000_.jpg');
+    background-image: url('images/background-image-0.jpg');
     background-position: top;
     background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.buttons {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-button-left{
+    width: 100px;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-left: 1.5%;
+}
+
+.carousel-button-right{
+    width: 100px;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-right: 1.5%;
 }
 
 .rectangle-container {
@@ -276,7 +312,7 @@ body {
 .footer {
     box-sizing: border-box;
     background-color: #232f3e;
-    margin: 0;
+    margin-top:0;
     font: 12px Arial, sans-serif;
     color: white;
     width: 100%;
