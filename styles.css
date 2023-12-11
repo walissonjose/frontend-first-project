@@ -3,6 +3,7 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -86,17 +87,15 @@ body {
 .search-bar {
     min-width: 75px;
     width: 100%;
-    height: 60px;
     font: 14px Arial, sans-serif;
     display: flex;
     align-items: center;
     position: static;
     box-sizing: border-box;
-
 }
 
-.search-scope {
-    width: 65px;
+.drop-down-button {
+    min-width: 65px;
     height: 40px;
     font-size: 12px;
     padding: 0 0;
@@ -104,12 +103,57 @@ body {
     cursor: pointer;
     background-color: rgb(230, 230, 230);
     text-align: center;
+    display: flex;
     color: black;
     border-radius: 5px 0 0 5px;
     border: 1px solid rgb(230, 230, 230);
-    display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.drop-down-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down{
+    position: absolute;
+    margin-top: 45px;
+    min-width: 200px;
+    max-height: 240px;
+    border: solid 1px rgb(230, 230, 230);
+    background-color: white;
+    z-index: 10;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.drop-down ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-down li{
+    cursor: pointer;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.drop-down li:hover{
+    background-color: blue;
+    color: white;
+}
+
+.transparent-frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .search-bar label {
@@ -121,7 +165,7 @@ body {
 }
 
 .search-bar input {
-    width: 100%;
+    min-width: 100%;
     height: 40px;
     padding: 0 0;
     box-sizing: border-box;
@@ -257,7 +301,6 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    /*    quero que tenha um espaço obrigatório entre cada rectangle*/
     margin: 0 10px 0 0;
     border: 1px solid rgb(230, 230, 230);
 }
@@ -355,4 +398,73 @@ body {
     margin-bottom: 0;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+}
+
+.menu-sliding {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+
+.menu-container{
+    max-height: 100%;
+    min-width: 200px;
+    width: 30%;
+    z-index: 200;
+}
+
+.menu-header {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(7, 36, 69);
+    flex-direction: row;
+    color: white;
+}
+
+.menu-header p {
+    box-sizing: border-box;
+    height: 100%;
+    margin-left: 1px;
+}
+
+.close-slide-menu {
+    box-sizing: border-box;
+    background-color: rgba(7, 36, 69, 0);
+    display: flex;
+    border: transparent;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 68%;
+}
+
+.menu-lists {
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.menu-lists ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lists li {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 0 0 10px;
+    margin: 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.menu-lists li:hover {
+    background-color: rgb(230, 230, 230);
 }
